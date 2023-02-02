@@ -39,7 +39,7 @@ section {
 
 .user-info {
     display: flex;
-    height: 300px;
+    min-height: 300px;
 }
 
 .user-img {
@@ -177,4 +177,18 @@ hr {
     padding: 10px;
     text-transform: capitalize;
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .user-info {
+        flex-direction: column;
+    }
+
+    .user-img {
+        width: 100%;
+    }
+
+    .trophies-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
