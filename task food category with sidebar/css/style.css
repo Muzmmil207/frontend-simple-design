@@ -11,7 +11,7 @@
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --tran: all .4s ease-in-out;
-    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .2);
+    --box-shadow-1: 0 5px 5px #e0dfdf;
 }
 
 * {
@@ -41,10 +41,41 @@ body {
 
 }
 
+/* Continuer Left */
 .container .left {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.container .left .food-card {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow-1);
+}
+
+.food-text {
+    height: 100%;
+    padding: 28px 18px;
+}
+
+.food-text .title {
+    color: #000;
+    font-family: cursive;
+    font-weight: 300;
+}
+
+.food-info {
+    margin: 10px 0;
+    display: flex;
+}
+
+/* Continuer Right */
 .container .right {
-    background-color: rgb(52, 139, 64);
+    /* background-color: rgb(73, 178, 87); */
 }
