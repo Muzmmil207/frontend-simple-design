@@ -75,6 +75,14 @@ body {
     display: flex;
 }
 
+.food-text .h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: red;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 /* Continuer Right */
 .container .right {
     /* background-color: rgb(73, 178, 87); */
