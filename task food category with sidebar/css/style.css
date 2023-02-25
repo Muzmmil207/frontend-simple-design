@@ -85,5 +85,34 @@ body {
 
 /* Continuer Right */
 .container .right {
-    /* background-color: rgb(73, 178, 87); */
+    padding: 0 18px;
+}
+
+.right form {
+    margin: 0 auto;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    border: 2px solid var(--color-grey-2);
+    border-radius: 20px;
+}
+
+.right form input {
+    outline: none;
+    border: 0;
+}
+
+.right form button {
+    outline: none;
+    border: 0;
+    background-color: var(--color-white);
+}
+
+.right .sidebar {
+    margin-top: 23px;
+}
+
+.right .sidebar .title {
+    color: #000;
+    font-family: cursive;
 }
