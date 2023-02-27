@@ -83,6 +83,34 @@ body {
     cursor: pointer;
 }
 
+/* Paginator */
+.paginator {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paginate {
+    border: 1px solid #b5b5b5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginate:hover {
+    background-color: red;
+    color: #FFFFFF;
+    transition-duration: 300ms;
+}
+
+.paginate.active {
+    background-color: red;
+    color: #FFFFFF;
+}
+
 /* Continuer Right */
 .container .right {
     padding: 0 18px;
@@ -171,6 +199,83 @@ hr {
 .tags-container h5 {
     color: var(--color-grey-4);
     background-color: #b5b5b5;
-    padding: 3px;
+    padding: 5px 8px;
     border-radius: 10px;
+}
+
+/* Subscribe */
+.subscribe {
+    background-color: rgb(254, 51, 51);
+    width: 63vw;
+    margin: 0 auto;
+    display: flex;
+    color: #FFFFFF;
+    padding: 18px;
+    border-radius: 8px;
+    position: relative;
+    top: 60px;
+    left: 0;
+}
+
+.left-sub {
+    width: 50%;
+}
+
+.left-sub h2 {
+    text-transform: capitalize;
+    font-family: cursive;
+    font-weight: 300;
+}
+
+.left-sub p {
+    margin-top: 10px;
+    font-size: x-small;
+}
+
+.right-sub {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.right-sub form {
+    background-color: #b5b5b533;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #b5b5b56e;
+    padding: 0 8px;
+}
+
+.right-sub form input {
+    background-color: #b5b5b500;
+    border: none;
+    color: #FFFFFF;
+    padding-left: 18px;
+    width: 73%;
+    height: 80%;
+    outline: none;
+}
+
+.right-sub form button {
+    border: none;
+    padding: 0 28px;
+    border-radius: 30px;
+    width: 26%;
+    height: 80%;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 1px #b5b5b5;
+}
+
+.bg-image {
+    height: 100px;
+    background-color: #000;
 }
