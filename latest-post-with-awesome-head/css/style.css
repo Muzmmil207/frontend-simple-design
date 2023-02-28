@@ -3,3 +3,151 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --color-orange: rgb(255, 103, 48);
+    --color-dd: #dddddd;
+}
+
+/* Navbar */
+nav {
+    height: 100px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    width: 300px;
+    background-color: rgb(255, 143, 102);
+    height: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.left-nav .last-posts {
+    width: 130px;
+    height: 100%;
+    background-color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 18px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    position: relative;
+    right: 20%;
+}
+
+.right-nav div:first-child {
+    background-color: var(--color-dd);
+    padding: 10px;
+}
+
+.right-nav div:last-child {
+    background-color: var(--color-orange);
+    padding: 10px;
+}
+
+.horizon {
+    height: 4px;
+    background-color: var(--color-dd);
+}
+
+/* Posts */
+.posts {
+    width: 70vw;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.post-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-dd);
+    height: 110px;
+    font-family: sans-serif;
+
+}
+
+.post-container p {
+    width: 70px;
+    text-align: center;
+}
+
+.post-container .image {
+    width: 140px;
+    overflow: hidden;
+    height: 100%;
+    margin: 0 8px;
+}
+
+.post-container .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.content h3 {
+    font-weight: 400;
+}
+
+.content .info {
+    display: flex;
+    font-size: 18px;
+    color: #656565;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.content .info i {
+    margin-left: 3px;
+}
+
+/* Media Queries */
+@media (max-width: 577) {
+    nav {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-nav {
+        position: static;
+        right: 20%;
+    }
+
+    .posts {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 960px) {
+    .post-container {
+        flex-direction: column;
+        height: 510px;
+    }
+
+    .post-container p {
+        margin: 8px 0;
+    }
+
+    .post-container .image {
+        width: 100%;
+        overflow: hidden;
+        margin: 8px 0px;
+    }
+
+}
