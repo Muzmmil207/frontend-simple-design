@@ -1,0 +1,13 @@
+:root {
+    --color-black: #000;
+    --color-white: #FFFFFF;
+    --color-blue: #0f02ff;
+    --br-sm-2: 14px;
+    --tran: all .4s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
