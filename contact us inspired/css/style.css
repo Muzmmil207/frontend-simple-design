@@ -46,8 +46,8 @@
 }
 
 .first .icon div {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: var(--color-white);
     color: var(--color-blue);
@@ -73,6 +73,10 @@
     transition-property: background;
     left: -10px;
     padding-left: 10px;
+}
+
+.nav .nav-item.active {
+    background: rgba(255, 255, 255, 0.353);
 }
 
 .nav .nav-item:hover {
@@ -148,4 +152,28 @@ textarea:focus {
     text-decoration: none;
     font-weight: 800;
     color: var(--color-blue);
+}
+
+.right-sec {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.right-sec h3 {
+    font-weight: 800;
+    margin-top: -100px;
+}
+
+.right-sec p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.right-sec .phone,
+.right-sec .email {
+    color: var(--color-blue);
+    margin: 10px 0;
+    cursor: pointer;
 }
