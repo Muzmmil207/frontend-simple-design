@@ -38,6 +38,17 @@
     font-family: sans-serif;
 }
 
+.box-content .canvas {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background: rgb(113, 252, 0);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
 .first {
     width: 25%;
     background-color: var(--color-blue);
