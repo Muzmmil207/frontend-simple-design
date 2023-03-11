@@ -49,3 +49,145 @@ body {}
     justify-content: center;
     align-items: center;
 }
+
+
+/* NAVBAR */
+.main .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 18px;
+    border-bottom: 0.01rem solid lightsteelblue;
+    height: 8%;
+}
+
+.navbar h1 {
+    color: var(--color-blue);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.navbar h1 strong {
+    background-color: var(--color-blue);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 8px;
+    margin-right: 7px;
+}
+
+.navbar .account {
+    display: flex;
+    gap: 20px;
+}
+
+.account .user-wallet {
+    display: flex;
+    border: 1px solid lightsteelblue;
+    border-radius: 30px;
+    align-items: center;
+    width: 220px;
+    overflow: hidden;
+}
+
+.account .user-wallet h6 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .82rem;
+}
+
+.account .user-wallet h6 span {
+    margin-left: 4px;
+}
+
+.account .user-wallet h6:first-child {
+    background-color: lightsteelblue;
+    color: var(--color-blue);
+}
+
+.account .user-wallet h6:last-child {
+    color: lightsteelblue;
+}
+
+.account .user-account {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user-account .account-icon {
+    padding: 9px;
+    background-color: var(--color-blue);
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.user-account .account-name {
+    font-weight: 500;
+    color: lightsteelblue;
+}
+
+
+main .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* MAIN CONTENT */
+main.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 92%;
+    padding: 0 20px;
+}
+
+.left-container {}
+
+.left-container h4 {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.left-container h4 span {
+    color: var(--color-blue);
+}
+
+.left-container .exchange-coins {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.exchange-toggle {
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.exchange-toggle button {
+    background-color: white;
+    border: none;
+    width: 40%;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.exchange-toggle button:first-child {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.exchange-toggle button:last-child {
+    border: 1px solid lightsteelblue;
+    color: var(--color-blue);
+}
+
+.right-container {
+    background-color: rgb(33, 41, 41);
+}
