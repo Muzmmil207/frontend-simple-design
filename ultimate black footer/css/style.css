@@ -135,3 +135,34 @@ footer>div:first-child>div {
 .networks-link .network:nth-child(4) {
     background-color: blueviolet;
 }
+
+
+footer>div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(47, 47, 47);
+    padding: 13px;
+    height: fit-content;
+}
+
+footer>div:last-child .left {}
+
+.left span,
+.left a {
+    color: #fff;
+}
+
+footer>div:last-child .right {
+    display: flex;
+    padding: 0 14px;
+    column-gap: 8px;
+}
+
+
+.right div {
+    background-color: #fff;
+    padding: 0 8px;
+    color: blue;
+    cursor: pointer;
+}
