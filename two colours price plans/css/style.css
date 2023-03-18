@@ -1,0 +1,111 @@
+body {
+    background-color: wheat;
+    font-family: sans-serif;
+}
+
+.bg-blue {
+    background-color: rgb(71, 181, 250);
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.br-blue {
+    border: 1px solid rgb(71, 181, 250);
+}
+
+.br-gray {
+    border: 1px solid gray;
+}
+
+.wrapper {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 600px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.price-plane {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-plane:first-child {
+    color: white;
+}
+
+.price-plane:nth-child(2) {
+    color: gray;
+}
+
+.price-wrapper {
+    background-color: white;
+    position: absolute;
+    top: -70px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.price-wrapper .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+}
+
+.price-wrapper .price h1 {
+    height: 0;
+}
+
+.price-wrapper .price h6 {
+    height: 0;
+}
+
+.price-plane>h1 {
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.plane-content {
+    list-style: none;
+    width: 100%;
+    margin-left: -40px;
+}
+
+.plane-content li {
+    text-align: center;
+    border: 1px solid;
+    padding: 10px 0;
+}
+
+.first li {
+    border-color: rgb(17, 158, 245) transparent rgb(71, 181, 250) transparent;
+}
+
+.last li {
+    border-color: gray transparent gray transparent;
+}
+
+.purchase-btn {
+    margin: 20px 0;
+    padding: 10px 13px;
+    border-radius: 30px;
+    color: white;
+}
