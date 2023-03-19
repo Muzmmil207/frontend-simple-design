@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+    --bs-indigo: #0a0a0a;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-gray-100: #f8f9fa;
+    --bs-yellow: #fcb92c;
+    --bs-gray: #6c757d;
+    --bs-danger: #dc3545;
+    --bs-light: #f5f7fb;
+    --bs-dark: #212529;
+    --bs-primary: #3b7ddd;
+    --bs-gray-300: #dee2e6;
+    --bs-success: #1cbb8c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    background: #000;
+}
+
+.app {
+    width: 500px;
+    height: 700px;
+    background-color: var(--bs-gray-100);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+
+.nav a {
+    color: var(--bs-primary);
+}
+
+form {
+    background: var(--bs-gray-300);
+    border-radius: 15px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+form input {
+    border: none;
+    height: 100%;
+    width: 90%;
+    background: inherit;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+form input::placeholder {
+    color: var(--bs-gray);
+    font-size: 1rem;
+}
+
+form button {
+    width: 10%;
+    height: 100%;
+    background: inherit;
+    border: none;
+    color: var(--bs-gray);
+}
+
+.menu-items {
+    margin: 30px 0;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: .1px .1px 6px var(--bs-gray-300);
+    padding: 15px;
+}
+
+.item-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(1) .icon {
+    background-color: var(--bs-primary);
+}
+
+.item:nth-child(2) .icon {
+    background-color: var(--bs-orange);
+}
+
+.item:nth-child(3) .icon {
+    background-color: var(--bs-gray);
+}
+
+.item:nth-child(4) .icon {
+    background-color: var(--bs-danger);
+}
+
+i {
+    color: var(--bs-light);
+    cursor: pointer;
+}
+
+.count {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bs-indigo);
+}
+
+.list .title {
+    font-size: 1.23rem;
+}
+
+.lists {
+    margin-top: 18px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: .1px .1px 6px var(--bs-gray-300);
+    padding: 15px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+}
+
+.list-item .lift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lift-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.list-item:first-child .lift-icon {
+    background-color: var(--bs-success);
+}
+
+.list-item:last-child .lift-icon {
+    background-color: var(--bs-danger);
+}
+
+.lift p {
+    font-size: 0.9rem;
+}
+
+.list-item .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bs-gray);
+}
+
+.right p {
+    font-size: 0.8rem;
+}
