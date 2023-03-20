@@ -1,3 +1,118 @@
+.bg-1 {
+    background-color: #20c997;
+}
+
+.bg-2 {
+    background-color: #fcb92c;
+}
+
+.bg-3 {
+    background-color: #012970;
+}
+
 body {
-    background-color: #f6f9ff;
+    height: 100vh;
+    margin: 100px 0;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    background-color: #c7e2fc;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 10px;
+    min-height: 400px;
+    margin: auto;
+    flex-wrap: wrap;
+    row-gap: 13px;
+}
+
+.plane-card {
+    background-color: white;
+    box-shadow: 0px 1px 2px white;
+    padding: 13px;
+    width: 230px;
+    border-radius: 6px;
+    height: fit-content;
+}
+
+.price {
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.price span {
+    position: relative;
+    font-size: 34px;
+    top: -10px;
+}
+
+.plane-tybe {
+    position: relative;
+    left: -20px;
+    width: 130px;
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.plane-tybe::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    z-index: 9999;
+    background-color: inherit;
+}
+
+.plane-future {
+    height: 200px;
+    margin: 25px 0;
+}
+
+.plane-future ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #949494;
+}
+
+div.btn {
+    margin: 30px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+a.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+}
+
+@media screen and (min-width:839px) {
+    .plane-card:nth-child(1) {
+        position: relative;
+        top: -40px;
+    }
+
+    .plane-card:nth-child(2) {
+        position: relative;
+        top: -20px;
+    }
 }
