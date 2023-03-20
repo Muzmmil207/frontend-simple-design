@@ -14,17 +14,18 @@ body {
     height: 100vh;
     margin: 100px 0;
     font-family: sans-serif;
+    background: #000;
 }
 
 .wrapper {
     background-color: #c7e2fc;
     display: flex;
-    justify-content: space-evenly;
     padding: 50px 10px;
     min-height: 400px;
+    width: fit-content;
     margin: auto;
     flex-wrap: wrap;
-    row-gap: 13px;
+    gap: 13px;
 }
 
 .plane-card {
