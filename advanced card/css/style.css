@@ -106,6 +106,7 @@ aside {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 40px;
+    height: 90%;
 }
 
 aside a {
@@ -138,4 +139,78 @@ aside a span {
     width: 30px;
     height: 3px;
     background-color: var(--bs-success);
+}
+
+muzamil img {
+    width: 100%;
+}
+
+.about {
+    padding: 30px 20px 0 5px;
+    color: var(--bs-gray);
+}
+
+.about h2 {
+    font-size: 28px;
+    position: relative;
+    width: 200px;
+}
+
+.about h2::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: var(--bs-success);
+    position: absolute;
+    bottom: -6px;
+    right: 70px;
+}
+
+.about h2::before {
+    content: "";
+    width: 50px;
+    height: 10px;
+    background-color: var(--bs-success);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.about p {
+    margin: 28px 0 18px;
+    font-size: 28px;
+    padding-right: 20px;
+}
+
+
+.contacts .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.contact h4 {
+    text-transform: capitalize;
+}
+
+.contact p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.more-about {
+    background-color: var(--bs-success);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin-top: 20px;
+}
+
+.more-about a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
 }
