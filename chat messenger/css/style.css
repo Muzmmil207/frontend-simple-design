@@ -63,7 +63,7 @@ img {
     border-color: transparent var(--bs-gray) transparent transparent;
 }
 
-form {
+form.searching {
     height: 8%;
     display: flex;
     gap: 10px;
@@ -71,7 +71,7 @@ form {
     align-items: center;
 }
 
-form input {
+form.searching input {
     background-color: var(--bs-gray);
     width: 80%;
     height: 60px;
@@ -84,7 +84,7 @@ form input {
     padding-left: 20px;
 }
 
-form button {
+form.searching button {
     width: 60px;
     border: none;
     outline: none;
@@ -152,4 +152,121 @@ form button {
 
 .active-con .user-message {
     color: white;
+}
+
+/* CONTENT RIGHT */
+.content-right .header {
+    background-color: var(--bs-gray);
+    padding: 13px 0 13px 30px;
+}
+
+.receiver-name {
+    font-weight: 400;
+}
+
+.receiver-name span {
+    color: #828282;
+}
+
+div.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: calc(80% - 26px);
+    padding: 0 20px;
+}
+
+.deration {
+    color: var(--bs-gray);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.deration h4 {
+    position: relative;
+    font-weight: 400;
+}
+
+.deration h4::after {
+    content: "";
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    height: 1px;
+    background-color: var(--bs-gray);
+}
+
+.deration h4::before {
+    content: "";
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 1px;
+    background-color: var(--bs-gray);
+}
+
+.message-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 100px;
+    max-height: 100%;
+}
+
+.message-container .message {
+    font-size: 16px;
+    font-weight: 400;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.message-container .message.left {
+    background-color: var(--bs-blue);
+    position: relative;
+    color: white;
+}
+
+.message-container .message.left::before {
+    content: "";
+    border: 4px solid;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    border-color: transparent var(--bs-blue) transparent transparent;
+}
+
+.message-container .message.right {
+    background-color: var(--bs-gray);
+    align-self: flex-end;
+}
+
+.messenger {
+    background-color: var(--bs-gray);
+    position: absolute;
+    bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    left: 5%;
+    height: 40px;
+    width: 90%;
+}
+
+.messenger input {
+    border: none;
+    outline: none;
+    width: calc(100% - 120px);
+    background-color: inherit;
+}
+
+.messenger i {
+    width: 40px;
+    color: var(--bs-gray-600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
