@@ -1,0 +1,230 @@
+:root {
+    --color-gray: rgb(84, 84, 84);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 14px;
+}
+
+a {
+    color: #000;
+    font-weight: 500;
+}
+
+nav {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+nav a:hover {
+    color: wheat;
+    transition-duration: 200ms;
+}
+
+nav .home {
+    position: relative;
+    margin-right: 10px;
+}
+
+nav .home::after {
+    position: absolute;
+    right: -10px;
+    top: 3px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    border-color: black black transparent transparent;
+    transform: rotate(45deg);
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 20px;
+    min-height: 90vh;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.sells {
+    margin-top: 20px;
+}
+
+.sells-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: rgb(227, 227, 227);
+}
+
+
+
+.filter-status {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-status .icon {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.filter-status .icon:first-child {
+    background-color: var(--color-gray);
+}
+
+.filter-status p {
+    color: var(--color-gray);
+    font-size: 1rem;
+}
+
+.sells-filter form {
+    display: flex;
+    gap: 20px;
+}
+
+form .form-control select {
+    border: none;
+}
+
+form .form-control label {
+    margin-right: 10px;
+}
+
+/* product */
+.product {
+    display: flex;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.product .image img {
+    height: 100%;
+}
+
+.product-description h5 {
+    font-weight: 300;
+    color: var(--color-gray);
+    margin: 15px 0;
+}
+
+.product-description .price {
+    color: red;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.product-description {
+    color: var(--color-gray);
+    margin: 15px 0;
+}
+
+.product-description .option {
+    color: var(--color-gray);
+    display: flex;
+    box-shadow: 0 1pt 3px var(--color-gray);
+    margin: 15px 0;
+    width: fit-content;
+}
+
+.product-description .option .icon {
+    padding: 5px;
+    border: 1px solid;
+    border-color: transparent var(--color-gray) transparent transparent;
+    font-size: 20px;
+}
+
+.product-description .option .icon:last-child {
+    border-color: transparent transparent transparent;
+
+}
+
+main .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .right>div {
+    border: 2px solid rgb(213, 213, 213);
+    padding: 12px;
+}
+
+main .right>div h1 {
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+main .right>div h1::after {
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: orangered;
+    position: absolute;
+    bottom: -4px;
+    left: 4px;
+}
+
+.laptop {}
+
+.color div {
+    position: relative;
+    color: var(--color-gray);
+    margin: 10px 0 10px 15px;
+}
+
+.color div::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: -20px;
+    box-shadow: 1px 1px 3px var(--color-gray);
+}
+
+.grey::before {
+    background-color: grey;
+}
+
+.white::before {
+    background-color: white;
+}
+
+.black::before {
+    background-color: black;
+}
+
+@media screen and (max-width:1378px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
