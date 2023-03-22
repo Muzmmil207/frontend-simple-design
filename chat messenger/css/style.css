@@ -173,7 +173,7 @@ div.main {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: calc(80% - 26px);
+    height: calc(96% - 26px);
     padding: 0 20px;
 }
 
@@ -207,6 +207,7 @@ div.main {
     height: 1px;
     background-color: var(--bs-gray);
 }
+
 
 .message-container {
     height: fit-content;
@@ -269,4 +270,5 @@ div.main {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
