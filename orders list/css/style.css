@@ -24,11 +24,117 @@
 body {
     height: 100vh;
     background-color: var(--bs-gray-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 95%;
     height: 95%;
     background-color: white;
-    margin: auto auto;
+    box-shadow: 1px 1px 5px var(--bs-gray-300);
+    border-radius: 5px;
+    padding: 20px;
 }
+
+
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+nav p {
+    color: var(--bs-gray-200);
+    font-size: 36px;
+    padding: 00;
+    padding-bottom: 10px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-top: 10px;
+    height: 92%;
+}
+
+.main-content form {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    gap: 15px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.main-content form input {
+    flex-grow: 1;
+    border: none;
+    background-color: var(--bs-gray-200);
+    height: 100%;
+    padding-left: 8px;
+}
+
+
+.main-content form input:nth-child(2),
+.main-content form input:nth-child(3) {
+    flex-grow: 2;
+}
+
+.main-content form input:last-of-type {
+    background-color: #6f42c1;
+    color: white;
+    text-transform: uppercase;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+table tr {
+    padding: 10px 0;
+}
+
+table td {
+    border: 1px solid;
+    border-color: var(--bs-gray-200) transparent transparent transparent;
+    padding: 10px 0;
+    height: 100px;
+    color: var(--bs-gray-500);
+}
+
+table th {
+    border: 1px solid;
+    border-color: transparent transparent var(--bs-gray-200) transparent;
+    padding: 10px 0;
+    height: 100px;
+    text-align: start;
+}
+
+table td:first-child {
+    display: flex;
+    gap: 4px;
+}
+
+table td:nth-child(2) img {
+    width: 60px;
+}
+
+table td:nth-child(5) input {
+    width: 26px;
+    padding: 5px 10px;
+}
+
+table td:nth-child() {}
+
+table td:nth-child() {}
