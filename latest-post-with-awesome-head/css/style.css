@@ -117,7 +117,7 @@ nav {
 }
 
 /* Media Queries */
-@media (max-width: 577) {
+@media (max-width: 577px) {
     nav {
         flex-direction: column;
         justify-content: space-between;

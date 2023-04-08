@@ -9,3 +9,33 @@
     height: 200px;
     background-color: black;
 }
+
+.search-form {
+    width: 100%;
+    padding: 17px 30px;
+    background-color: rgb(33, 96, 151);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 104, 47);
+}
+
+.form-element {
+    width: 10px;
+    display: flex;
+    height: 40px;
+}
+
+input,
+select {
+    border: none;
+    outline: none;
+}
+
+input {
+    padding-left: 15px;
+}

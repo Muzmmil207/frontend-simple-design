@@ -36,6 +36,12 @@
     --bs-body-bg: #f5f7fb
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
@@ -43,5 +49,132 @@ body {
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.5;
-    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.heading {
+    color: var(--bs-gray-500);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.p {
+    padding: 1rem;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1rem 0 0 1rem;
+    background-color: #222e3c;
+    min-width: 260px;
+    max-width: 260px;
+}
+
+.nav-head h1 {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.sidebar-nav {
+    margin-top: 2rem;
+}
+
+.sidebar-header {
+    color: white;
+    font-size: 0.8rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.sidebar-item {
+    margin: 1rem 0;
+}
+
+.sidebar-link:hover {
+    color: var(--bs-gray-500);
+}
+
+/* ======== MAIN ========= */
+main {
+    background-color: var(--bs-gray-100);
+    width: 100%;
+    overflow: scroll;
+}
+
+/* header */
+header {
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.149);
+}
+
+.menu-btn i {
+    font-size: 1.5rem;
+}
+
+.navbar-collapse {}
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin: 3rem 2rem;
+}
+
+.page-name {
+    font-weight: 100;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.page-name span {
+    background-color: var(--bs-gray-900);
+    font-size: 0.63rem;
+    font-weight: 800;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.row {
+    background-color: white;
+    box-shadow: 0 0 0.875rem 0 rgb(33 37 41 / 5%);
+}
+
+.row:first-child {
+    width: 25%;
+}
+
+.profile-details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

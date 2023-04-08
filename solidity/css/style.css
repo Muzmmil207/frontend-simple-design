@@ -1,6 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif;
     color: #888888;
     font-weight: 300;
     font-style: normal;
+}
+
+.wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.head .title a {
+    color: #3cb04a;
+    font-size: 46px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.search-form input {
+    width: 90%;
+    height: 45px;
+    border: #ccc 1px solid;
+    padding-left: 9px;
+    font-size: 20px;
+    color: #ccc;
 }
