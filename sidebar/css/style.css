@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+:root {
+	--tran: all 0.3s ease;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	transition: var(--tran);
+}
+
+a:hover {
+	color: black;
+}
+
+nav {
+	background: rgb(91, 69, 161);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 50px 15px 80px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.logo span {
+	color: red;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	column-gap: 48px;
+}
+
+.sidebar-toggle {
+	display: none;
+}
+
+.sidebar-toggle label {
+	font-weight: 500;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+input[type='checkbox'] {
+	display: none;
+}
+
+aside {
+	opacity: 0;
+	transform: translateY(-120%);
+	transition: all 0.4s ease-in-out;
+}
+
+.aside-list {
+	background: rgb(78, 60, 140);
+	padding: 15px 0 15px 0;
+	list-style: none;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+
+#toggler:checked+aside {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media (max-width:740px) {
+	.nav-list {
+		display: none;
+	}
+
+	.sidebar-toggle {
+		display: block;
+	}
+
+}
