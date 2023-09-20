@@ -1,6 +1,224 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --tran: all 0.3s ease;
+    --color-1: rgb(16, 16, 69);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 180px;
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-1);
+    padding: 10px 180px;
+}
+
+header .call {
+    color: white;
+    font-size: 16px;
+}
+
+header .call i {
+    font-size: 20px;
+}
+
+header .social-accounts {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .social-accounts a {
+    color: white;
+    margin: 0 5px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    transition: var(--tran);
+}
+
+header .social-accounts a:hover {
+    background-color: black !important;
+}
+
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 180px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 11px;
+}
+
+.nav-menu li a {
+    color: var(--color-1);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-menu .login {
+    background-color: rgb(0, 0, 172);
+    padding: 6px 14px;
+}
+
+.nav-menu .login a {
+    color: white;
+}
+
+
+/* section.main */
+
+section.main {
+    position: relative;
+    height: 700px;
+    padding: 0;
+}
+
+.bg-img {
+    height: 100%;
+}
+
+section.main .main-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: blue;
+    color: white;
+    padding: 40px 18px 40px 180px;
+}
+
+section.main .main-content h1 {
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+section.main .main-content h1 span {
+    color: rgb(250, 104, 0);
+}
+
+section.main .main-content p {
+    margin: 18px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.choose-login {
+    margin: 40px 0;
+}
+
+.choose-login span {
+    font-size: 22px;
+}
+
+.choose-login .login-btns {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.choose-login .login-btns a {
+    color: white;
+    margin-right: 20px;
+    border: 1px solid white;
+    padding: 5px 18px;
+}
+
+.choose-login .login-btns a:hover {
+    background-color: white;
+    color: #000;
+}
+
+
+/* what-do */
+
+.sec-title {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.sec-title h1 {
+    font-size: 60px;
+    color: blue;
+    font-weight: 600;
+}
+
+.what-do {
+    background-color: blue;
+    color: white;
+}
+
+.sec-des {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sec-container {
+    margin-top: 50px;
+}
+
+.sec-container .content {
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 60px; */
+}
+
+.content .image {
+    position: relative;
+    left: -180px;
+    /* height: 450px; */
+    width: 450px;
+}
+
+
+/* Media */
+
+@media screen and (max-width:1000px) {
+    section.main .main-content h1 {
+        font-size: 45px;
+    }
+    section {
+        padding: 20px;
+    }
+    .content .image {
+        position: relative;
+        /* top: 0; */
+        left: -20px;
+    }
 }
