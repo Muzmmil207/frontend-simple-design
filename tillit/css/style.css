@@ -8,6 +8,7 @@
 :root {
     --tran: all 0.3s ease;
     --color-1: rgb(16, 16, 69);
+    --color-orange: rgb(250, 104, 0);
 }
 
 img {
@@ -22,6 +23,15 @@ a {
 
 section {
     padding: 20px 180px;
+}
+
+h1,
+h2 {
+    text-transform: capitalize;
+}
+
+body {
+    background-color: aliceblue;
 }
 
 
@@ -175,6 +185,7 @@ section.main .main-content p {
     font-size: 60px;
     color: blue;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .what-do {
@@ -196,14 +207,201 @@ section.main .main-content p {
     /* position: relative; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 60px; */
+    gap: 60px;
+    margin-bottom: 60px;
 }
 
 .content .image {
     position: relative;
     left: -180px;
-    /* height: 450px; */
-    width: 450px;
+}
+
+.content .image:last-child {
+    left: 0px;
+}
+
+.content .txt-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.txt-content .txt h2 {
+    color: var(--color-orange);
+}
+
+.txt-content .txt p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.choose-login .login-btns {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    color: white;
+    margin-right: 20px;
+    border: 1px solid white;
+    padding: 5px 18px;
+    transition: var(--tran);
+}
+
+.btn:hover {
+    background-color: white;
+    color: #000;
+}
+
+
+/* we-care-imgs */
+
+.we-care-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.we-care-imgs .image {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* reason */
+
+.reason .sec-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reason-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    margin: 20px;
+    gap: 80px;
+    left: -180px;
+}
+
+.reason-txt {
+    background-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 20px 180px;
+}
+
+.reason-txt h2 {
+    color: var(--color-orange);
+    font-size: 35px;
+}
+
+.reason-txt p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    line-height: 1.3;
+}
+
+.reason-imgs {
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.reason-item:nth-child(2),
+.reason-item:nth-child(4) {
+    left: 180px;
+}
+
+
+/* blog */
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* flex-wrap: wrap; */
+}
+
+.blog-item {
+    background-color: rgb(209, 209, 223);
+    border: 1px solid rgb(185, 185, 192);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+}
+
+.blog-item p {
+    margin-top: 15px;
+}
+
+.blog-buttons {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button:first-child a {
+    background-color: blue;
+    padding: 10px 15px;
+    color: white;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button:last-child i {
+    color: var(--color-orange);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* contact */
+
+.contacts-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 'info info form form form';
+    grid-template-rows: 800px;
+    background-color: white;
+    padding: 14px;
+    border-radius: 11px;
+}
+
+.contact-info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: blue;
+    padding: 35px 0 25px 25px;
+    border-radius: 11px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info .title h1 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.contact-info .title p {
+    color: rgb(149, 149, 149);
+    font-size: 18px;
+}
+
+.contact-info .contacts div {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.contact-info .contacts div .type {
+    margin-right: 20px;
 }
 
 
