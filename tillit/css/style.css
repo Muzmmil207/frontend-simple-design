@@ -368,6 +368,7 @@ section.main .main-content p {
     background-color: white;
     padding: 14px;
     border-radius: 11px;
+    margin-bottom: 100px;
 }
 
 .contact-info {
@@ -377,7 +378,7 @@ section.main .main-content p {
     justify-content: space-between;
     align-items: flex-start;
     background-color: blue;
-    padding: 35px 0 25px 25px;
+    padding: 50px;
     border-radius: 11px;
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -402,6 +403,99 @@ section.main .main-content p {
 
 .contact-info .contacts div .type {
     margin-right: 20px;
+}
+
+.contact-social {
+    display: flex;
+}
+
+.contact-social .icon {
+    margin: 0 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--tran);
+    cursor: pointer;
+}
+
+.contact-social .icon:hover {
+    background-color: white;
+    color: gold;
+}
+
+.contact-social .icon i {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-form {
+    grid-area: form;
+    padding: 50px;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.message,
+.input-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+label {
+    text-transform: capitalize;
+    color: grey;
+}
+
+input,
+textarea {
+    margin: 8px 0 3px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.message::after,
+.input-item::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    background: #000;
+}
+
+.message {
+    margin-top: 35px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-btn input {
+    background-color: blue;
+    width: fit-content;
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transition: var(--tran);
+}
+
+.submit-btn input:hover {
+    transform: scale(1.08);
 }
 
 
