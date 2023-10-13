@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --tran: all 0.3s ease;
+    --color-1: ;
+    --color-orange: rgb(250, 104, 0);
+}
+
+body {
+    height: 100vh;
+    background-image: url(/img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    max-width: 500px;
+}
+
+.sec-title {
+    color: white;
+    text-align: center;
+}
+
+.sec-title h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.sec-title p {
+    color: rgb(171, 171, 171);
+    font-weight: 500;
+}
+
+.sec-container {
+    margin: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-element {
+    border: 2px solid rgba(255, 255, 255, 0.661);
+    height: 45px;
+    display: flex;
+}
+
+.form-element label {
+    position: relative;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form-element label::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 80%;
+    right: 0;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.form-element input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.form-element input::placeholder {
+    color: white;
+}
+
+.more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stay span {
+    color: white;
+    font-size: 16px;
+}
+
+.forgot {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sing {
+    display: flex;
+    justify-content: center;
+}
+
+.sing button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 35px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--tran);
+}
+
+.sing button:hover {
+    background-color: white;
+    color: black;
+}
