@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --tran: all 0.3s ease;
+}
+
+a {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(43, 255, 255);
+}
+
+.wrapper {
+    width: 90vw;
+    margin: 60px auto 0;
+}
