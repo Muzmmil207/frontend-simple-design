@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --tran: all 0.3s ease;
+}
+
+body {
+    background-color: rgb(12, 0, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    color: rgb(175, 0, 0);
+    text-decoration: none;
+    transition: var(--tran);
+}
+
+a:hover {
+    color: white;
+}
+
+.wrapper {
+    width: 90vw;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: 430px 430px;
+    gap: 20px;
+}
+
+.row {
+    position: relative;
+    background-color: rgba(63, 54, 90, 0.399);
+    color: white;
+    padding: 50px 25px 35px;
+    min-height: 80vh;
+}
+
+.title {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.form-input {
+    margin-top: 25px;
+}
+
+.form-input input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(175, 0, 0);
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 10px 0 10px 20px;
+    color: white;
+    transition: var(--tran);
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group input {
+    padding: 10px 0 10px 10px;
+}
+
+.form-input input::placeholder {
+    padding: 10px 0 10px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.form-txt {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin-top: 25px;
+}
+
+.btn button {
+    width: 100%;
+    height: 45px;
+    border-radius: 45px;
+    background-color: rgb(166, 51, 51);
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+}
