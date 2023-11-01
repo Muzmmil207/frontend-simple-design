@@ -184,11 +184,11 @@ section.details .details {
 }
 
 .skill {
-    display: flex;
-    align-items: center;
     margin: 20px 0;
     height: 43px;
     padding: 0 18px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
 }
 
 .skill .skill-name {
