@@ -36,6 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px 0 20px;
 }
 
 h1 {
@@ -47,6 +48,14 @@ h1 {
     font-weight: 700;
 }
 
+label {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
 .menu ul {
     display: flex;
     list-style: none;
@@ -54,6 +63,25 @@ h1 {
 
 .menu ul li {
     margin: 0 15px;
+}
+
+.menu a {
+    position: relative;
+}
+
+.menu a::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #000;
+    bottom: 0;
+    left: 0;
+    transition: all linear .2s;
+}
+
+.menu a:hover:before {
+    width: 100%;
 }
 
 
@@ -94,13 +122,16 @@ section.details {
 section.details .details {
     padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .detail {
     margin: 0 20px;
     text-align: center;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .detail .detail-title {
@@ -119,7 +150,7 @@ section.details .details {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 800px;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -153,13 +184,10 @@ section.details .details {
     background-color: #6481bf;
 }
 
-.detail {
-    width: 100%;
-}
-
 .c {
     padding: 42px 100px;
     color: white;
+    margin: 10px 0;
 }
 
 .c span {
@@ -256,4 +284,31 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width:800px) {
+    nav {
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    label {
+        display: block;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
 }
