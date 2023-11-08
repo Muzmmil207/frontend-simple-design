@@ -259,4 +259,132 @@ header {
 .wrapper {
     background-color: var(--bs-gray-100);
     height: 100%;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1550px;
+    width: 100%;
+    margin: auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head .title h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.head .title p {
+    color: var(--bs-gray-400);
+    font-size: 17px;
+}
+
+.contact-form {
+    display: flex;
+    gap: 25px;
+    height: 40px;
+}
+
+.contact-form .csf {
+    display: flex;
+    align-items: center;
+    background-color: var(--bs-white);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 25px 18px;
+}
+
+.contact-form .csf button {
+    border: none;
+    outline: none;
+    background-color: var(--bs-white);
+    border-radius: 8px;
+    color: var(--bs-purple);
+    font-size: 24px;
+    margin-right: 15px;
+    font-weight: 300;
+}
+
+.contact-form .csf input {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--bs-white);
+    color: var(--bs-gray-600);
+}
+
+.contact-form a {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.contact-form .table {
+    background-color: var(--bs-white);
+    color: var(--bs-gray-600);
+}
+
+.add-user {
+    background-color: var(--bs-purple);
+    color: white;
+}
+
+.add-user i {
+    margin-right: 5px;
+}
+
+.wrapper .content {
+    margin-top: 25px;
+}
+
+.contacts-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contacts-cards .card {
+    background-color: white;
+    padding: 25px 15px;
+    box-shadow: 0 1px 8px rgba(109, 109, 109, 0.2);
+    transition: var(--tran);
+    border-radius: 8px;
+}
+
+.contacts-cards .card:hover {
+    box-shadow: 0 1px 14px rgba(109, 109, 109, 0.2);
+    transform: scale(1.01);
+}
+
+.card .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 75px;
+    height: 75px;
+}
+
+.card-img img {
+    border-radius: 12px;
+    position: relative;
+}
+
+.card-img img::after {
+    position: absolute;
+    content: 'Hs';
+    bottom: 0;
+    right: -4px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--bs-pink);
 }
