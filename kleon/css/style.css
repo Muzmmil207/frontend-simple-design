@@ -48,6 +48,11 @@ a {
     display: block;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 nav {
     height: 100vh;
     max-width: 300px;
@@ -134,10 +139,124 @@ header {
     padding: 20px 0;
 }
 
+.header {
+    max-width: 1550px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 42px;
+}
+
+.header-form {
+    height: 100%;
+    display: flex;
+}
+
+.header-form button {
+    background-color: var(--bs-gray-100);
+    border: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    width: 50px;
+    color: var(--bs-purple);
+    font-size: 20px;
+}
+
+.header-form input {
+    background-color: var(--bs-gray-100);
+    border: none;
+    outline: none;
+    border-radius: 0 20px 20px 0;
+    padding: 0 10px;
+}
+
+.header-content {
+    display: flex;
+    height: 100%;
+}
+
+.header-content .other {
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content .other a {
+    text-decoration: underline;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.header-items .item {
+    color: var(--bs-gray-500);
+    margin: 0 12px;
+    font-size: 23px;
+    position: relative;
+    cursor: pointer;
+    transition: var(--tran);
+}
+
+.header-items .item:hover {
+    color: var(--bs-gray-600);
+}
+
+.header-items .item:first-child::before {
+    content: '12';
+    position: absolute;
+    top: -8px;
+    right: 0;
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+.user-details {
+    display: flex;
+    transition: var(--tran);
+    cursor: pointer;
+}
+
+.user-details:hover {
+    box-shadow: 0 0 5px rgba(00, 0, 0, 0.1);
+}
+
+.user-details .user-img {
+    margin-right: 14px;
+    height: 100%;
+    width: 43px;
+}
+
+.user-details .user-img img {
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.user-name .name {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.user-name .user-job {
+    font-size: 14px;
+    color: var(--bs-gray-400);
+    font-weight: 400;
+}
+
 
 /* wrapper */
 
 .wrapper {
     background-color: var(--bs-gray-100);
-    height: 999px;
+    height: 100%;
 }
