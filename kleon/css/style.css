@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --tran: all 0.3s ease;
+    --color-1: ;
+    --color-orange: rgb(250, 104, 0);
+}
