@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="media-share-container">
+        <span class="media-share-close-btn">
+            <i class="fa fa-solid fa-xmark"></i>x
+        </span>
+        <div class="media-share-icons">
+            <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://bookskai.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-facebook"></i>
+                <span class="tooltip">Facebook</span>
+            </a>
+            <a class="twitter" href="https://twitter.com/intent/tweet?url=https://bookskai.com&amp;text=BooksShelf" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-twitter"></i>
+                <span class="tooltip">Twitter</span>
+            </a>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?url=https://bookskai.com&amp;title=BooksShelf" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-linkedin"></i>
+                <span class="tooltip">Linkedin</span>
+            </a>
+            <a class="pinterest" href="https://www.pinterest.com/pin/create/button/?url=https://bookskai.com&media={% static 'img/favicon.png' %}&description=Books Shelf" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-pinterest-p"></i>
+                <span class="tooltip">Pinterest</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        const closeBtn = document.querySelector('.media-share-close-btn')
+        closeBtn.addEventListener('click', () => {
+            closeBtn.classList.toggle('open')
+        })
+    </script>
+</body>
+
+</html>
