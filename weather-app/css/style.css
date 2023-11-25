@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bs-blue: #3b7ddd;
+    --bs-blue: #0056d8;
     --bs-indigo: #0a0a0a;
     --bs-purple: #6f42c1;
     --bs-pink: #e83e8c;
@@ -37,4 +37,56 @@
     --bs-light: #f5f7fb;
     --bs-dark: #212529;
     --tran: all 0.3s ease;
+}
+
+body {
+    background: #000;
+}
+
+.app {
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--bs-blue);
+    padding: 15px 0;
+}
+
+nav .nav-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-btns button {
+    margin-right: 20px;
+    color: var(--bs-white);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 10px;
+    transition: all 0.15s ease;
+}
+
+.nav-btns button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-btns button i {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.currant-location {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.currant-location .location {
+    color: var(--bs-white);
 }
