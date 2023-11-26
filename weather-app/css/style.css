@@ -46,9 +46,10 @@ body {
 .app {
     background-color: white;
     max-width: 400px;
+    height: 100vh;
     width: 100%;
-    min-height: 100vh;
     margin: 0 auto;
+    overflow-y: scroll;
 }
 
 nav {
@@ -89,4 +90,88 @@ nav .nav-btns {
 
 .currant-location .location {
     color: var(--bs-white);
+}
+
+
+/* MAIN */
+
+main {
+    background-image: linear-gradient(#0056d8, #17a2b8);
+    padding: 20px 0;
+}
+
+main .hero {
+    text-align: center;
+}
+
+main .hero .mute {
+    color: var(--bs-gray-500);
+}
+
+main .hero .currant-temperature {
+    font-size: 58px;
+    color: var(--bs-white);
+    font-weight: 300;
+}
+
+main .hero .day-temperature {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--bs-gray-200);
+}
+
+/* sections */
+.sections {
+    margin-top: 24px;
+}
+
+.sections>* {
+    margin-top: 16px;
+}
+
+.container {
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.267);
+    border-radius: 21px;
+}
+
+.precipitation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.precipitation>* {
+    display: flex;
+    color: white;
+}
+
+.precipitation .pre-percent {
+    margin-right: 16px;
+    position: relative;
+}
+
+.precipitation .pre-percent::after {
+    width: 1px;
+    height: 80%;
+    background-color: var(--bs-white);
+    position: absolute;
+    content: '';
+    right: -8px;
+    transform: translateY(10%);
+}
+
+.precipitation>* i {
+    font-size: 38px;
+    margin-right: 15px;
+}
+
+.precipitation .pre-index i {
+    color: #ffcb5b;
+}
+
+.precipitation>* h6 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.3;
 }
