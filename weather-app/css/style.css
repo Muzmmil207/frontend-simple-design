@@ -61,6 +61,10 @@ body {
     background: #000;
 }
 
+.fa-sun-o {
+    color: #ffcb5b;
+}
+
 .app {
     background-color: white;
     max-width: 400px;
@@ -289,4 +293,19 @@ main .hero .day-temperature {
     font-size: 21px;
     margin-top: 20px;
     text-align: end;
+}
+
+.details .detail {
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bs-white);
+    font-size: 21px;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.327);
+    border-radius: 1px;
 }
